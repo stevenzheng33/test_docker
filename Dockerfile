@@ -16,16 +16,12 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 # 2) change to root to install packages
 USER root
 
-RUN	apt-get install htop
 
-RUN apt-get -y install aria2
-RUN apt-get -y install nmap
-RUN apt-get -y install traceroute
 
 # 3) install packages
 RUN pip install --no-cache-dir networkx scipy python-louvain
-RUN conda install geopandas
-RUN pip install babypandas
+RUN pip install twarc
+RUN pip install tweepy
 
 
 # 4) change back to notebook user
