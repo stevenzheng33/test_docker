@@ -19,9 +19,10 @@ USER root
 
 
 # 3) install packages
+
+RUN pip install --no-cache-dir networkx scipy python-louvain
 RUN pip install tweepy
 RUN pip install pyplot
-RUN pip install --no-cache-dir networkx scipy python-louvain
 RUN pip install twarc
 
 
