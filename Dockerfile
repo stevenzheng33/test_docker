@@ -22,6 +22,7 @@ USER root
 RUN pip install --no-cache-dir networkx scipy python-louvain
 RUN pip install twarc
 RUN pip install tweepy
+RUN pip install pyplot
 
 
 # 4) change back to notebook user
